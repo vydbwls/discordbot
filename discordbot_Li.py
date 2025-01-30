@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import random
 import asyncio
+import os
 from dotenv import load_dotenv
 
 load_dotenv("discord_Li_token.env")  # .env 파일 로드
