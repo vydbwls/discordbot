@@ -2,7 +2,10 @@ import discord
 from discord.ext import commands
 import random
 import asyncio
+from dotenv import load_dotenv
 
+load_dotenv()  # .env 파일 로드
+TOKEN = os.getenv("DISCORD_BOT_TOKEN")  # 환경 변수에서 토큰 가져오기
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -196,4 +199,4 @@ async def 홀짝(ctx):
 
 
 
-bot.run('MTE1MjYzNTIzNDg4NjYyMzM1OQ.G24vOj.tJ7Q9cAeBc0gg-NoI0Zs9esQ60d7bj74pDFTeA')
+bot.run(TOKEN)
