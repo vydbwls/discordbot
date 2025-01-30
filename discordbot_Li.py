@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv("discord_Li_token.env")  # .env 파일 로드
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")  # 환경 변수에서 토큰 가져오기
+print(f"DISCORD_BOT_TOKEN: {os.getenv('DISCORD_BOT_TOKEN')}")
 
 intents = discord.Intents.default()
 intents.message_content = True
