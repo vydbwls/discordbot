@@ -1,3 +1,4 @@
 discord.py
 asyncio
-random
+discord-voice
+python-dotenv
